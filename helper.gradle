@@ -315,6 +315,7 @@ publishing {
     }
     repositories {
         maven {
+            /*
             def slurper = new groovy.json.JsonSlurper();
             def apiKey = slurper.parseText(new File(projectDir, "../AMBER_TOKEN").text)
             println "\nPublishing ${project.archives_base_name} to Maven..."
@@ -324,6 +325,8 @@ publishing {
                 username = apiKey.username
                 password = apiKey.token
             }
+
+             */
         }
     }
 }
